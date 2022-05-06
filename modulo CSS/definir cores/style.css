@@ -1,0 +1,48 @@
+
+/*
+    definir cor por NOME
+    coloca o nome da cor
+*/
+#ex1 h2{
+    color: white;
+    background-color: blue;
+}
+
+/*
+    Em código HEXADECIMAL
+    principal forma de definir as cores em CSS, é um sistema numérico com símbolos de [0-9 e a-f].
+    a cor hexadecimal é definida por um conjunto de 06 símbolos. 
+    a escala de intensidade indo de 0-f onde "0" é mais fraca e "f" mais forte.
+    02 primeiros define a intensidade da cor Red (vermelha)
+    02 centrais define a intensidade da cor Green (verde)
+    02 últimos define a intensidade da cor Blue (azul)
+*/
+#ex2 h2{
+    color:#ffffff;
+    background-color:#0000ff;
+}
+
+/*
+    Em RGB 
+    a cor é definida pela escala de intensidade indo de 0-255 onde "0" é mais fraca e "255" mais forte.
+    primeiro define a intensidade da cor Red (vermelha)
+    central define a intensidade da cor Green (verde)
+    ultimo define a intensidade da cor Blue (azul)    
+*/
+#ex3 h2{
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 255);
+}
+
+/*
+    Em HSL
+    a cor é definida por
+    Hue (tonalidade) => medida em angulos variando de 0 - 360
+    Saturation (saturação) => medida em porcentagem variando de 0% - 100%
+    Lightness (brilho) => medida em porcentagem variando de 0% - 100%
+
+*/
+#ex4 h2{
+    color: hsl(0, 0%, 100%);
+    background-color:hsl(240, 100%, 50%);
+}

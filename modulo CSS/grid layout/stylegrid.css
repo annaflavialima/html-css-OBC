@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    display: grid;
+
+    /*define a quantidade de linhas e colunas, e posicionamento das areas dentro do layout*/
+    grid-template-areas: 
+    "header header" /*"header" ocupará duas colunas*/
+    "nav nav" /*"nav" ocupará duas colunas*/
+    "content aside" /*"content" ocupará a coluna da esquerda e "aside" a da direita*/
+    "footer footer"; /*"footer" ocupará duas colunas*/
+
+    /*define a altura das linhas de cada elemanto indicado no "template-areas"*/
+    grid-template-rows: 15vh 10vh 55vh 20vh; /*medida "vh" define a % de utilização da tela de visualização do navegador*/
+
+    gap: 10px; /*espaçamento entre as linhas e as colunas*/
+}
+
+.mainHeader{
+    grid-area: header; /*define a area do "header"*/
+    background-color: lightcoral;
+}
+
+.mainNav{
+    grid-area: nav; 
+    background-color: lightgreen;
+}
+
+.mainContent{
+    grid-area: content; 
+    background-color: lightseagreen;
+}
+
+.mainAside{
+    grid-area: aside; 
+    background-color: lightsalmon;
+}
+
+.mainFooter{
+    grid-area: footer;
+    background-color: lightslategray;
+}
+
+/* breakpoints - mudança do layout nos diferentes tipos de tela */
+@media screen and (max-width: 700px){
+    #main{
+        grid-template-areas: "header" "content" "aside" "footer"; /*define o layout quando a tela ficar menor que 700px*/
+        grid-template-rows: 15vh 55vh 20vh 10vh; /*define a altura de cada linha no layout*/
+    }
+
+    .mainNav{
+        grid-area: header; /*associa o "nav" a area do "header"*/
+        margin-top: 40px;
+    }
+}

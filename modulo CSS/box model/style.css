@@ -1,0 +1,10 @@
+h1{
+    margin-top: 80px;  /*define o espaçamento entre elementos, pode ser top: left, right, bottom*/
+    margin-right: auto; /*marin left e right em auto centraliza o conteudo na box model*/
+    margin-left: auto;
+    margin-bottom: 100px;
+    /*simplificando => margin: top right bottom left*/
+    width: 15%; /*define a ocupação do conteudo na box model*/
+    border: 2px solid orange;
+    padding: 10px 20px 30px 40px; /*define o espaçamento entre o conteudo e a borda, pode ser top: left, right, bottom. simplificando => margin: top right bottom left*/
+}

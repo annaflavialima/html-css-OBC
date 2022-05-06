@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section#main{
+    display: grid; /*Com isso estamos dizendo: "Olha, navegador, a tag section vai receber um grid, assim posso informar onde cada tag vai ficar".*/
+    grid-template-areas: /*desenha o layout e indica por quais elementos será composto*/
+        "header header header" /*a primeira linha vai ser composta por um header*/
+        "aside article article" /*a segunda linha vai ser composta pelo aside na esquerda e pelo article, ocupando duas colunas na direita*/
+        "footer footer footer"; /*a terceira e última linha vai ser composta por um footer.*/ 
+    grid-gap: 15px; /*espaçamento entre as areas*/ 
+    /*  definir o tamanho que cada row(linha) ou column(coluna)
+        - estão sendo informadas três vezes, isso porque temos um layout de três colunas e três linhas.
+        - apenas para a segunda linha declaramos o valor 100% que corresponde a altura total da viewport (tela de visualização do browser)
+    */
+    grid-template-columns: auto auto auto;  
+    grid-template-rows: auto 100vh auto;
+}
+
+/*indicando aos elementos onde eles devem ficar, ou seja, qual "lacuna" é de cada um - INICIO*/
+.header{
+    grid-area: header;
+    padding: 1.5rem;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.article{
+    grid-area: article;
+}
+
+.footer{
+    grid-area: footer;
+    padding: 1rem;
+}
+/*indicando aos elementos onde eles devem ficar, ou seja, qual "lacuna" é de cada um - FIM*/
+
+.header, .article, .aside, .footer{
+    background-color: #BC20E2;
+    color: white;
+}

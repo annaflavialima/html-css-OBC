@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+}
+
+.item{
+    background-color: #ff0044;
+    flex-basis: 150px; /*define o tamanho (tanto largura quanto altura, depende da direção do flex) do item*/
+    flex-grow: 1; /*preenchimento do espaço que sobrou do container. '1' indica que todos os itens terao mesmo tamanho */
+}
+
+.item2{
+    flex-grow: 3; /*indica que o item 02 definido com essa class terá o triplo do tamanho dos demais itens*/
+}
+
+.item3{
+    flex-shrink: 4; /*ao diminuir a tela, o item 03 definido com essa class ira diminuir 4 vezes mais em relaçao aos demais itens*/
+}

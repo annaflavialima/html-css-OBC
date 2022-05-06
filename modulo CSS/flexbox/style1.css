@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* 
+        propriedade que trava o tamanho definido para caixa, e dessa forma quando define um padding o espaçamento nao aumenta o tamanho da caixa. 
+        EX.: uma box com 400px de altura e largura se aplicado um padding: 30px 50px; Teríamos a box com 500px de largura, e não os 400px que foi definido. com os 50px para padding-left e padding-right, estes valores são somados a largura que foi estabelecida inicialmente, desta forma temos: 400px (largura definida) + 50px (padding left) + 50px (padding right) = 500px de largura. No caso da altura, o valor determinado de padding-top e padding-bottom de 30px é somado a largura de 400px que foi definida e, com isso, chegamos ao valor de 460px.
+        Para resolver este problema, basta adicionar: box-sizing: border-box
+    */
+
+    display: flex; /*propriedade definida no elemento-pai para ativar o 'display:flex'. assim os itens ficam dispostos em colunas*/
+    gap: 10px; /*propriedade shorthand 'GAP' engloba a 'COLUMN-GAP' e a'ROW-GAP', que definem o espaçamento (horizontal/vertical) entre os flex-itens*/
+    /*flex-direction: define a direção dos itens dentro do container*/
+    flex-wrap: wrap; /*define a quebra de fluxo e o item se adapta a tela. 'nowrap' é o padrão, sem quebra*/
+    align-items: center; /*alinhamento vertical dos itens dentro do container*/
+    justify-content: center; /*alinhamento horizontal dos itens dentro do container*/
+}
+
+.item{
+    background-color: #ff0044;
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,25 @@
+
+/*
+    para selecionar do HTML para aplicar o estilo:
+
+    class => usa "." e nome da classe
+    id => usa "#" e nome do id
+*/
+
+.red-text{
+    color: rgb(223, 13, 13);
+}
+
+.big-text{
+    font-size: 35px;
+}
+
+#europa-text{
+    font-size: 20px;
+    color: orange;
+}
+
+li{
+    color: blue;
+}
+/*OBS: nesse caso muda apenas o elemento "li" que nao tem nenhuma "class" ou "id" definidos.*/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício de forms</title>
+    </head>
+
+    <body>
+        <h3>Cadastro da liga dos astronautas</h3>
+        <form action="https://www.exemplo.com.br">
+            <div>
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="name">
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email"> - 
+                <label for="senha"> Password: </label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <br>
+            <div>
+                <label for="data">Data de Nascimento: </label>
+                <input type="date" id="data" name="niver"> - 
+                <label for="photo">Foto: </label>
+                <input type="file" id="photo" name="photo">
+            </div>
+            <br>
+            <div>
+                <label for="nationality">Nacionalidade: </label>                
+                <select name="nationality" id="nationality">
+                    <option value="brasil">Brasil</option>
+                    <option value="russia">Rússia</option>
+                    <option value="ira">Irã</option>
+                </select> - 
+                Gênero:              
+                    <label for="female">F</label>
+                    <input type="radio" id="female" name="gender" value="female"> 
+                    <label for="male">M</label>
+                    <input type="radio" id="male" name="gender" value="male">
+            </div> 
+            <br>
+            <div>
+                Suas principais habilidades: <br>
+                    <label for="intec">Inteligência </label>
+                    <input type="checkbox" id="intec" name="intec"> |
+                    <label for="resil">Resiliência </label>
+                    <input type="checkbox" id="resil" name="resil"> |
+                    <label for="trainer">Preparo Físico </label>
+                    <input type="checkbox" id="trainer" name="trainer"> |
+                    <label for="educ">Educação </label>
+                    <input type="checkbox" id="educ" name="educ">
+            </div>
+            <br>
+            <div>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Por que você gostaria de ser um astronauta?"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Criar">
+            </div>
+        </form>
+        
+    </body>
+</html>

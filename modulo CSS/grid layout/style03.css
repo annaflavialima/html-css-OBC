@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* usando "grid-template-columns" e "grid-template-rows" - INICIO */
+section.container{
+    background-color: lightgray;
+    border: 3px solid red;
+    padding: 15px;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 50px auto 10%;
+    grid-template-rows: 70% 30%;
+    gap: 5px;
+}
+
+section.container div{
+    background-color: lightsalmon;
+    padding: 20px;
+    border: 2px solid blue;
+}
+/* usando "grid-template-columns" e "grid-template-rows" - FIM */
+
+
+/* usando "grid-template-areas" - INICIO */
+#template-areas{
+    background-color: lightsteelblue;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-areas:
+    'header header header header'
+    'content content content aside'
+    'footer footer footer footer';
+    grid-template-rows: 15vh auto 5vh;
+}
+
+#template-areas header, aside, section, footer{
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+#header{
+    grid-area: header;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#content{
+    grid-area: content;
+}
+
+#footer{
+    grid-area: footer;
+}
+/* usando "grid-template-areas" - FIM */
+
+
+/* alinhamento do container - INICIO */
+section.containerPai{
+    background-color: lightcyan;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+}
+
+section.containerPai div{
+    background-color: lightcoral;
+    padding: 20px;
+    border: 1px solid blue;
+}
+/* alinhamento do container - FIM */
+
+
+/* alinhamento dos itens - INICIO */
+section.containerItem{
+    background-color: lightsteelblue;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+section.containerItem div{
+    background-color: lightpink;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+.item-1{
+    grid-column-start: 1; /*indica onde o item inicia a ocupação da coluna*/
+    grid-column-end: 4; /*indica onde o item termina a ocupação da coluna*/
+}
+
+.item-2{
+    grid-row-start: 2; /*indica onde o item inicia a ocupação da linha*/
+    grid-row-end: 4; /*indica onde o item termina a ocupação da linha*/
+}
+
+.item-3{
+    justify-self: end; /*define o posicionamento horizontal no final do espaço ocupado pelo item*/
+    height: 150px;
+}
+
+.item-5{
+    justify-self: start; /*define o posicionamento horizontal no inicio do espaço ocupado pelo item*/
+    height: 150px;
+}
+
+.item-4{
+    align-self: center; /*define o posicionamento vertical no centro do espaço ocupado pelo item*/
+}
+
+.item-6{
+    align-self: end; /*define o posicionamento vertical no final do espaço ocupado pelo item*/
+}
+/* alinhamento dos itens - FIM */

@@ -1,0 +1,43 @@
+body{
+    background-image: url('fundo.png');
+    font: 16px Arial, Helvetica, sans-serif;
+    width: 67%;  
+}
+
+nav{
+    background-color: rgb(194, 194, 194);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a{
+    color: rgb(62, 102, 102);
+    text-decoration: none;
+    margin: 10px;  
+    font-weight: 600;      
+}
+
+
+section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer{
+    text-align: center;
+    font-weight: 900;
+    padding: 15px;
+}
+
+
+h3{
+    color: rgb(194, 194, 194);
+}
+
+img#publis{
+    border: 10px solid rgb(194, 194, 194);
+}

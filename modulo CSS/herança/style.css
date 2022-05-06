@@ -1,0 +1,21 @@
+/*
+    Algumas propriedades de estilo são aplicadas de um elemento para outro, como herança de pai para filho. E para evitar que o estilo seja aplicado onde não deveria, pode subescrever os seletores sendo mais específico possível no CSS.
+*/
+
+#ex01{
+    color: blue;
+} /*nesse caso toda a "div" ficará azul, e todos os elementos dentro dela.*/
+
+/*Para evitar que isso acontece, deve ser mais específico na seleção dos elementos*/
+#ex02 ul li{
+    color: red;
+}
+
+/*propriedade "inherit"=> para herdar os mesmos estilos do elemento pai.*/
+
+#ex03{
+    border: 2px solid black;
+}
+#ex03 ul{
+    border: inherit;
+}

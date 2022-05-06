@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validação de Formulários</title>
+    </head>
+
+    <!--Como validar um formulário-->
+
+    <body>
+        <h2>Preenchimento obrigatório</h2>
+        <h3>Encontre no Google</h3>   
+        <form action="https://www.google.com/search">
+            <label for="q">O que deseja pesquisar?</label>
+            <input type="text" id="q" name="q" placeholder="Nasa, Estrelas..." required>
+                <!--o atributo "required" define a obrigatoriedade de preenchimento do campo-->
+            <input type="submit" value="Pesquisar">
+        </form>
+        <hr>
+
+        <h2>Garantir que o dado digitado seja de fato um endereço de e-mail válido.</h2>
+        <h3>Faça seu login</h3>
+        <form action="">
+            Login: <input type="email" name="email">
+                <!--verifica se o campo informado é do tipo e-mail (com exigência de @)-->
+            <br>
+            Senha: <input type="text" placeholder="mínimo 8 caracteres">
+            <input type="submit" value="Logar">
+        </form>
+        <hr>
+
+        <h2>Intervalos numéricos</h2>
+        <form action="">
+            Ano de nascimento: <input type="number" min="1950" max="2021">
+                <!--atributos "min" define o valor mínimo e "max" define o valor máximo-->
+            <input type="submit" value="Confirmar"> 
+        </form>
+        <hr>
+
+        <h2>Autocompletar</h2>
+            <!--sugere opção de dados informados anteriormente no browser-->
+        <h3>Permitido autocomplatar</h3>
+        <form action="" autocomplete="on">
+            Nome: <input type="text" name="nome">
+            <br>
+            Sobrenome: <input type="text" name="sobren">
+            <br>            
+        </form>
+        <br><br>
+        <h3>Não é permitido autocomplatar</h3>
+        <form action="" autocomplete="off">
+            Nome: <input type="text" name="nome">
+            <br>
+            Sobrenome: <input type="text" name="sobren">
+            <br>            
+        </form>
+        <hr>
+
+        <h2>Não validar formulário</h2>
+        <form action="" novalidate>
+            E-mail: <input type="email" name="seu_email">
+            <input type="submit" value="Confirmar"> 
+        </form>
+        <hr>
+            
+        <h2>Lista de opções</h2>
+        <h3>Encontre no Google</h3>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>                
+        </datalist>
+
+    </body>
+
+</html>

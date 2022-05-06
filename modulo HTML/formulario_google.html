@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario para o Google</title>
+    </head>
+
+    <!--Criando um formulario que direciona para uma pesquisa no Google-->
+
+    <body>
+        <h1>Encontre no Google</h1>
+        <form action="https://www.google.com/search" method="get"> 
+                <!--<form> é a tag que cria um formulário. o atributo "action" define a URL que irá receber e processar os dados do formulário. o atributo "method" define o método (get pegar as informações do formulário) (post enviar as informações ao servidor)-->
+            <label for="q">O que deseja pesquisar?</label>
+                <!--<label> é a tag que associa um texto a tag <input>, o atributo "for" liga ao ID do input para a integração do formulário-->
+            <input type="text" id="q" name="q" placeholder="Nasa, satélite...">
+                <!--<input> é a tag para receber os dados do usuário, o atributo "type" define o tipo de input (text/ radio/ submit), o atributo "id" liga ao "for" do label, o atribbuto "name" define a qual parâmetro o input se refere, o atributo "placeholder" fornece uma sugestão ao usuário do que inserir na caixa de texto-->
+            <input type="submit" value="Pesquisar"> 
+                <!--o atributo "submit" cria o botão qua envia os dados ao servidor, o atributo "value" define o nome que aparece no botão.-->
+        </form>
+        
+    </body>
+
+</html>

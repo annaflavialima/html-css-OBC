@@ -1,0 +1,26 @@
+#ex01 p{
+    font-family: Arial, Helvetica, sans-serif; 
+        /*define a fonte. é passado opções de fontes para o browser identificar. 1º a fonte princiapl arial caso nao identifique, pesquisa a helvetica, por ultimo um estilo genérico sans-serif*/
+    font-size: 20px;
+        /*define o tamanho da fonte*/
+    font-weight: bold;
+        /*define o peso da fonte, "bold" ou "600" deixa em negrito*/
+    line-height: 2.5;
+        /*define o espaçamento entre linhas*/
+}
+
+#ex01 h1{
+    text-align: center;
+        /*define o alinhamento do texto. pode ser left, center, right*/
+    text-decoration: line-through;
+        /*define uma decoração ao texto*/
+}
+
+#ex02 h1{
+    font-family: 'Geostar Fill', cursive; 
+        /*no link do google fonts, lado direito tem o código para incluir a fonte no CSS*/
+}
+
+#ex02 p{
+    font-family: 'Fruktur', cursive;
+}

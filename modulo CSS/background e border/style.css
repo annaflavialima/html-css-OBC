@@ -1,0 +1,41 @@
+h1{
+    color: #ffffff; /*define uma cor do elemento*/
+    background-color: #f3866b; /*define uma cor de fundo do elemento*/
+    border-color:#7fff00; /*define a cor da borda do elemento*/
+    border-width: 4px; /*define a largura da borda do elemento*/
+    border-style: solid; /*define o estilo da borda do elemento. "solid", dorba continua*/
+}
+
+h2, p{
+    color: #ffffff;
+}
+
+body{
+   background-image: url("espaco.jpeg"); /*define uma imagem de fundo do elemento*/
+   background-repeat: no-repeat; /*define a repetição da imagem de fundo. "no-repeat" não repete*/
+   background-size: cover; /*define o tamanho da imagem de fundo. "cover" a imagem é redimensionada para encaixar na área disponível*/
+}
+
+#ex1{
+    border-color:#7fff00;
+    border-width: 4px; 
+    border-style: dashed; /*"dashed", dorba traçejada*/
+}
+
+#ex2{
+    border-color:#7fff00;
+    border-width: 4px;
+    border-style: dotted; /*"dotted", dorba pontilhada*/
+}
+
+#ex3{
+    border-color:#7fff00;
+    border-width: 4px;
+    border-style: double; /*"double", dorba dupla*/
+}
+
+/*Simplificand a a propriedade border*/
+
+#ex4{
+    border: 4px solid #ffffff;
+}

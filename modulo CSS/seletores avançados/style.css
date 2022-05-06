@@ -1,0 +1,54 @@
+
+/* 
+    seletor universal => "*"
+        seleciona todos os elementos do documento HTML => recomenda-se não usar essa técnica em produção, pois deixa o navegador muito pesado (por ter de selecionar todo e cada elemento).
+*/
+*{
+    color: brown;
+} /* Nesse caso todo elemento do documento HTML foi estilizado.*/
+
+
+/*
+    seletor de descendêcia 
+        é mais abrangente. Sua sintaxe é composta pelo elemento que queremos selecionar e o elemento que ele descende separados por um espaço em branco
+*/
+div h4{
+    border: 2px solid blue;
+} /* Nesse caso todo "h4" dentro de uma "div" foi estilizado.*/
+
+
+/*
+    seletor por filho
+        é mais específico. A diferença entre o seletor descendente X Y padrão e o seletor X > Y é que o último somente seleciona filhos diretos.
+*/
+div > li{
+    border: 2px dotted green;
+} /* Nesse caso apenas o "li" dentro de uma "div" foi estilizado.*/
+
+
+/*
+    seletor adjacente  
+        Ele selecionará somente o elemento imediatamente após o primeiro elemento. Não dentro do elemento, mas sim logo depois dele    
+*/
+h1 + h4{
+    background-color: grey;
+} /* Nesse caso o "h4" logo após o "h1" foi estilizado.*/
+
+
+/*
+    seletor de atributos
+        Seleciona todos os elementos com um [atributo="nome do atributo"]
+*/
+a[href="/transp"]{
+    color: green;
+} /* Nesse caso todo elemento "a" com atributo "href="/transp" foi estilizado.*/
+
+
+/*
+    seletor por pseudo-classe
+        cria uma classe de seleção para o elemento a ser estilizado
+*/
+li:nth-of-type(2){
+    background-color:burlywood;
+}
+/*nesse caso para estilizar cada 2º "li" de todo "ul"*/

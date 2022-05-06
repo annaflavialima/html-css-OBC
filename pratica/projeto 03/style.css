@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;    
+    background-color: #efefef;
+}
+
+header{
+    background-color: rgb(255, 174, 0);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 24px;    
+}
+
+a{
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+span{
+    color: black;
+}
+
+div#post{
+    border: 2px solid red;
+    width: 650px;
+    background-color: white;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+div#post-recen{
+    background-color: white;
+    width: 30%;
+}

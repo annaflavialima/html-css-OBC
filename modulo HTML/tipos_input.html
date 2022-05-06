@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tipos de Input</title>
+    </head>
+
+    <!--Tipos de INPUT-->
+
+    <body>
+        <h1>Tipos de Input</h1>
+
+        <!-- text - caixa de texto-->
+        <h3>Faça sua busca: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="text" name="busca">
+        </form>
+        
+        <!-- password - informar senha, esconde caracteres-->
+        <h3>Digite sua senha: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="password" name="psw">
+        </form>
+        
+        <!-- submit - Botão de envio-->
+        <h3>Confirme: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="submit" name="ok" placeholder="Enviar">
+        </form>
+
+        <!-- radio - permite selecionar apenas uma opção. IMPORTANTE: devem ter o atributo "name" igual, para o backend processar a opção selecionada"-->
+        <h3>Sexo: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="radio" name="sex" value="masc"> Masculino
+            <input type="radio" name="sex" value="fem"> Feminino
+        </form>
+
+        <!-- checkbox - permite selecionar mais de uma opção. IMPORTANTE: devem ter o atributo "name" diferente, para o backend processar se a opção está ativa ou inativa-->
+        <h3>Frutas: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="checkbox" name="fruit1" value="maca"> Maçã
+            <input type="checkbox" name="fruit2" value="pera"> Pêra
+            <input type="checkbox" name="fruit3" value="uva"> Uva
+            <input type="checkbox" name="fruit4" value="kiwi"> Kiwi 
+        </form>
+
+        <!-- color - envia a cor em codigo hexadecimal para o backend-->
+        <h3>Escolha uma cor: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="color" name="cor">
+        </form>
+
+        <!-- date - formato de data, permite escolher no calendário-->
+        <h3>Data de nascimento: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="date" name="niver">
+        </form>
+
+        <!-- email - campo de e-mail-->
+        <h3>Digite seu e-mail: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="email" name="email">
+        </form>
+
+        <!-- file - enviar arquivos-->
+        <h3>Escolha um arquivo: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="file" name="arq">
+        </form>
+
+        <!-- number - escolher numero-->
+        <h3>Dia do aniversário: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="number" name="bday" min="01" max="31">
+        </form>
+
+        <!-- range - controle deslizante-->
+        <h3>Nível de satisfação: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="range" name="nivel" min="1" max="10">
+        </form>
+
+        <!-- tel - número de telefone-->
+        <h3>Celular: </h3>
+        <form action="https://www.exemplo.com.br">
+            <input type="tel" name="phone">
+        </form>
+        
+    </body>
+</html>
